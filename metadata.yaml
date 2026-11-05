@@ -1,0 +1,16 @@
+name: astrbot_plugin_nickname_mapper
+display_name: Nickname Mapper
+short_desc: 按对话线为每个用户设置专属昵称，只影响 LLM 收到的身份信息
+desc: 为 AstrBot 提供用户昵称映射能力。可按独立对话（conversation_id）为同一用户设置不同昵称，仅改写发送给 LLM 的请求内容，不修改平台侧资料，也不影响其他用户。
+version: 1.1.0
+author: Alva
+repo: https://github.com/alva-lorenz-nl/astrbot_plugin_nickname_mapper
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - discord
+  - slack
+  - wecom
+  - lark
+astrbot_version: ">=4.5.0"

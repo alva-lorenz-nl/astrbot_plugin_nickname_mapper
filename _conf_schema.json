@@ -1,0 +1,7 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "是否启用昵称映射功能",
+    "default": true
+  }
+}
