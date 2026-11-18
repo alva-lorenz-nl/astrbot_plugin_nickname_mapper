@@ -15,7 +15,7 @@ from astrbot.core.star.star_tools import StarTools
     "astrbot_plugin_nickname_mapper",
     "Alva",
     "用户昵称映射，支持按独立对话(conversation_id)设置个性化昵称，只影响 LLM 接收的内容",
-    "1.1.0",
+    "1.1.1",
 )
 class NicknameMapperPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
@@ -226,7 +226,7 @@ class NicknameMapperPlugin(Star):
 
     @filter.command("昵称列表")
     async def list_nicknames(self, event: AstrMessageEvent):
-        """查看当前会话下所有对话的昵称列表（同 /查看昵称）"""
+        """别名：等价于 /查看昵称，仅为习惯该叫法的用户保留"""
         async for res in self.get_nickname(event):
             yield res
 
